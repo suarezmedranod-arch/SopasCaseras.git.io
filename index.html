@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sopas caseras preparadas con ingredientes frescos. Consulta nuestro menú y pide a domicilio.">
+
+    <title>Sabor de Casa | Sopas Caseras</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">🍲</span>
+                <span>Sabor de Casa</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="navbar" id="navbar">
+
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#galeria">Galería</a>
+                <a href="#delivery">Delivery</a>
+                <a href="#contacto">Contacto</a>
+
+            </nav>
+
+            <a href="#menu" class="btn btn-primary nav-button">
+                Ver menú
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <span class="hero-tag">
+                    <i class="fa-solid fa-heart"></i>
+                    Hecho con amor
+                </span>
+
+                <h1>
+                    El sabor de casa,
+                    <span>en cada cucharada.</span>
+                </h1>
+
+                <p>
+                    Sopas caseras preparadas con ingredientes frescos,
+                    recetas familiares y ese sabor que nunca se olvida.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn btn-primary">
+                        <i class="fa-solid fa-utensils"></i>
+                        Ver nuestro menú
+                    </a>
+
+                    <a href="https://wa.me/50588888888"
+                       target="_blank"
+                       class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Pedir por WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BENEFICIOS ================= -->
+
+        <section class="features">
+
+            <div class="container features-grid">
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <div>
+                        <h3>Ingredientes frescos</h3>
+                        <p>Seleccionamos nuestros ingredientes cuidadosamente.</p>
+                    </div>
+                </div>
+
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <div>
+                        <h3>Sabor casero</h3>
+                        <p>Recetas familiares preparadas con mucho cariño.</p>
+                    </div>
+                </div>
+
+
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+
+                    <div>
+                        <h3>Delivery</h3>
+                        <p>Recibe tu pedido directamente en tu casa.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENU ================= -->
+
+        <section class="section menu-section" id="menu">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Nuestro menú
+                    </span>
+
+                    <h2>
+                        Sopas preparadas <span>para vos</span>
+                    </h2>
+
+                    <p>
+                        Elegí tu favorita y disfrutá de un delicioso plato
+                        preparado al estilo casero.
+                    </p>
+
+                </div>
+
+
+                <div class="menu-grid" id="menuContainer">
+
+                    <!-- Sopa 1 -->
+
+                    <article class="food-card">
+
+                        <div class="food-image">
+
+                            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+                                 alt="Sopa de verduras">
+
+                            <span class="popular">
+                                Más pedida
+                            </span>
+
+                        </div>
+
+                        <div class="food-content">
+
+                            <div class="food-title">
+
+                                <h3>Sopa de Res</h3>
+
+                                <span class="price">
+                                    C$180
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Deliciosa sopa de res con verduras,
+                                yuca, plátano y el auténtico sabor casero.
+                            </p>
+
+                            <button class="order-btn"
+                                    onclick="pedir('Sopa de Res')">
+
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Pedir ahora
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Sopa 2 -->
+
+                    <article class="food-card">
+
+                        <div class="food-image">
+
+                            <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?auto=format&fit=crop&w=900&q=80"
+                                 alt="Sopa de pollo">
+
+                        </div>
+
+                        <div class="food-content">
+
+                            <div class="food-title">
+
+                                <h3>Sopa de Pollo</h3>
+
+                                <span class="price">
+                                    C$150
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Caldo de pollo acompañado de verduras
+                                frescas y deliciosos complementos.
+                            </p>
+
+                            <button class="order-btn"
+                                    onclick="pedir('Sopa de Pollo')">
+
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Pedir ahora
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Sopa 3 -->
+
+                    <article class="food-card">
+
+                        <div class="food-image">
+
+                            <img src="https://images.unsplash.com/photo-1604152135912-04a022e23696?auto=format&fit=crop&w=900&q=80"
+                                 alt="Sopa casera">
+
+                        </div>
+
+                        <div class="food-content">
+
+                            <div class="food-title">
+
+                                <h3>Sopa de Gallina</h3>
+
+                                <span class="price">
+                                    C$200
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Receta tradicional preparada lentamente
+                                para conservar todo su sabor.
+                            </p>
+
+                            <button class="order-btn"
+                                    onclick="pedir('Sopa de Gallina')">
+
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Pedir ahora
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SOBRE NOSOTROS ================= -->
+
+        <section class="about section" id="nosotros">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80"
+                         alt="Preparación de comida casera">
+
+                    <div class="experience">
+                        <strong>100%</strong>
+                        <span>Hecho en casa</span>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="section-tag">
+                        Nuestra historia
+                    </span>
+
+                    <h2>
+                        Una familia,
+                        <span>un sabor.</span>
+                    </h2>
+
+                    <p>
+                        Este emprendimiento nació del amor por la cocina
+                        y de esas recetas familiares que pasan de generación
+                        en generación.
+                    </p>
+
+                    <p>
+                        Queremos compartir con cada cliente una comida
+                        deliciosa, preparada con ingredientes frescos
+                        y, sobre todo, con mucho cariño.
+                    </p>
+
+
+                    <div class="about-list">
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Ingredientes seleccionados</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Preparación del día</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            <span>Recetas tradicionales</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= IMAGEN + TEXTO ================= -->
+
+        <section class="story-section section">
+
+            <div class="container story-grid">
+
+                <div class="story-content">
+
+                    <span class="section-tag">
+                        Hecho con amor
+                    </span>
+
+                    <h2>
+                        La diferencia está
+                        <span>en los detalles.</span>
+                    </h2>
+
+                    <p>
+                        Desde la selección de los ingredientes hasta el
+                        momento en que servimos cada plato, cuidamos cada
+                        detalle para que recibás una sopa deliciosa.
+                    </p>
+
+                    <a href="#contacto" class="btn btn-primary">
+                        Conocé más
+                    </a>
+
+                </div>
+
+
+                <div class="story-image">
+
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80"
+                         alt="Sopa preparada en casa">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALERIA ================= -->
+
+        <section class="section gallery-section" id="galeria">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Galería
+                    </span>
+
+                    <h2>
+                        Un poquito de
+                        <span>nuestro sabor.</span>
+                    </h2>
+
+                    <p>
+                        Conocé nuestros platos y parte de lo que hacemos.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery">
+
+                    <div class="gallery-item large">
+
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80"
+                             alt="Sopa">
+
+                    </div>
+
+                    <div class="gallery-item">
+
+                        <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?auto=format&fit=crop&w=800&q=80"
+                             alt="Comida casera">
+
+                    </div>
+
+                    <div class="gallery-item">
+
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
+                             alt="Preparación">
+
+                    </div>
+
+                    <div class="gallery-item">
+
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                             alt="Plato de sopa">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DELIVERY ================= -->
+
+        <section class="delivery section" id="delivery">
+
+            <div class="container delivery-container">
+
+                <div class="delivery-content">
+
+                    <span class="section-tag">
+                        Delivery
+                    </span>
+
+                    <h2>
+                        Tu sopa favorita
+                        <span>hasta tu puerta.</span>
+                    </h2>
+
+                    <p>
+                        No necesitás salir de casa. Escribinos por WhatsApp,
+                        realizá tu pedido y nosotros nos encargamos de llevarlo.
+                    </p>
+
+
+                    <div class="delivery-info">
+
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+                                <strong>Zonas de entrega</strong>
+                                <p>Cuidad Sandino y zonas cercanas</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Domingo · 8:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <i class="fa-solid fa-motorcycle"></i>
+
+                            <div>
+                                <strong>Costo de delivery</strong>
+                                <p>Desde C$50 según la zona</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <a href="https://wa.me/50587634303"
+                       target="_blank"
+                       class="btn btn-whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Pedir por WhatsApp
+
+                    </a>
+
+                </div>
+
+
+                <div class="delivery-image">
+
+                    <div class="delivery-circle">
+                        🛵
+                    </div>
+
+                    <h3>
+                        Pedí fácil y rápido
+                    </h3>
+
+                    <p>
+                        Escribinos, indicá tu pedido y ubicación.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section class="section contact-section" id="contacto">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-tag">
+                        Contacto
+                    </span>
+
+                    <h2>
+                        Estamos para
+                        <span>atenderte.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <a href="https://wa.me/50588888888"
+                       target="_blank"
+                       class="contact-card">
+
+                        <div class="contact-icon whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <h3>WhatsApp</h3>
+
+                        <p>
+                            +505 8763-4303
+                        </p>
+
+                        <span>
+                            Escribinos →
+                        </span>
+
+                    </a>
+
+
+                    <a href="tel:+50587634303"
+                       class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <h3>Teléfono</h3>
+
+                        <p>
+                            +505 8763-4303
+                        </p>
+
+                        <span>
+                            Llamar →
+                        </span>
+
+                    </a>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <h3>Ubicación</h3>
+
+                        <p>
+                            Managua, Nicaragua
+                        </p>
+
+                        <span>
+                            Ver ubicación →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#inicio" class="logo footer-logo">
+                    <span class="logo-icon">🍲</span>
+                    <span>Sabor de Casa</span>
+                </a>
+
+                <p>
+                    Sopas caseras preparadas con amor
+                    para compartir en familia.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Enlaces</h3>
+
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#delivery">Delivery</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Seguinos</h3>
+
+                <div class="socials">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/50588888888"
+                       target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Sabor de Casa · Todos los derechos reservados.
+
+        </div>
+
+    </footer>
